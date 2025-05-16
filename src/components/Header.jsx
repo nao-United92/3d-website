@@ -1,6 +1,19 @@
 import 'boxicons/css/boxicons.min.css';
 
 const Header = () => {
+  // Simple function to toggle the mobile menu
+  const toggleMobileMenu = () => {
+    // Get the Mobile Menu Element
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    // If it has the 'hidden' class, remove it. otherwise, add it
+    if (mobileMenu.classList.contains('hidden')) {
+      mobileMenu.classList.remove('hidden');
+    } else {
+      mobileMenu.classList.add('hidden');
+    }
+  };
+
   return (
     <header className="flex justify-between items-center py-4 px-4 lg:px-20">
       <h1 className="text-3xl md:text-4x1 lg:text-5x1 font-light m-0">MCODE</h1>
@@ -41,7 +54,7 @@ const Header = () => {
       </button>
 
       {/* Mobile Menu Button - Visible only on Mobile */}
-      <button className="md:hidden text-3xl p-2 z-50">
+      <button onClick={toggleMobileMenu} className="md:hidden text-3xl p-2 z-50">
         <i class="bx bx-menu"></i>
       </button>
 
