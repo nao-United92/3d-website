@@ -1,4 +1,5 @@
 import 'boxicons/css/boxicons.min.css';
+import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
@@ -42,6 +43,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      {/* 3D Robot */}
+      <Spline className='absolute lg:top-0 top-[-20%] bottom-0 lg:left-[25%] sm:left-[-2%] h-full' scene="https://prod.spline.design/2pl04wObUnovuV7I/scene.splinecode" />
     </main>
   );
 };
