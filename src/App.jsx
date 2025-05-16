@@ -1,7 +1,17 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from 'react';
 
 export default function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: true,
+    });
+  });
+
   return (
     <main>
       {/* Gradient Image */}

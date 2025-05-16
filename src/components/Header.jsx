@@ -16,11 +16,21 @@ const Header = () => {
 
   return (
     <header className="flex justify-between items-center py-4 px-4 lg:px-20">
-      <h1 className="text-3xl md:text-4x1 lg:text-5x1 font-light m-0">MCODE</h1>
+      <h1
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+        className="text-3xl md:text-4x1 lg:text-5x1 font-light m-0"
+      >
+        MCODE
+      </h1>
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex items-center gap-12">
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1000"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
           href="#"
         >
@@ -28,6 +38,9 @@ const Header = () => {
         </a>
 
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
           href="#"
         >
@@ -35,6 +48,9 @@ const Header = () => {
         </a>
 
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2000"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
           href="#"
         >
@@ -42,6 +58,9 @@ const Header = () => {
         </a>
 
         <a
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="2500"
           className="text-base tracking-wider transition-colors hover:text-gray-300 z-50"
           href="#"
         >
@@ -54,7 +73,10 @@ const Header = () => {
       </button>
 
       {/* Mobile Menu Button - Visible only on Mobile */}
-      <button onClick={toggleMobileMenu} className="md:hidden text-3xl p-2 z-50">
+      <button
+        onClick={toggleMobileMenu}
+        className="md:hidden text-3xl p-2 z-50"
+      >
         <i class="bx bx-menu"></i>
       </button>
 
